@@ -1,25 +1,76 @@
-h1.page-title {
-    font-size: 160px !important;
+/* General CSS for Bootleg */
+
+/* Variables  */
+
+:root {
+    --white: hsla(0, 0%, 98%, 1);
+    --blue: hsla(234, 92%, 19%, 1);
+    --blue-contrast: hsla(201, 96%, 44%, 0.5);
+    --selected:hsla(96, 99%, 51%, 0.5);
+
+}
+
+/* Globals */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
     border: 2px solid red;
 }
 
+a {
+   color: var(--white);
+}
+
+a:hover{
+    color: var(--selected);
+}
+
+a:active{
+    color: var(--selected);
+}
+
+/* This is overriding the default style for the current breadbrumb option */
+
+a.is-active{
+    color:var(--white) !important;
+}
+
+body{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* Margin 12% to account for sidebar menu */
 
 main{
     margin-left: 12%;
 }
 
+
+/* Regions */
+
 /* Header region */
 .region-header {
     width: 100vw;
     min-height: 15%;
-    border: 2px solid salmon;
+    display: inline-flex;
+    justify-content: space-around;
 }
 
 .block-system-branding-block{
     display: inline-flex;
+    padding: 1%;
+}
+
+/* Search bar appearing in the header */
+
+.search-block-form{
+    display: inline-flex;
+    align-items: center;
+    
 }
 
 /* Site title */
@@ -30,11 +81,9 @@ main{
 
 /* Content Region */
 
-.region-content{    
-    
+.region-content{       
     width: 100%;
 }
-
 
 /* Secondary menu (side bar menu) */
 
@@ -42,7 +91,7 @@ main{
 
     position: fixed;
     height: 100vh;
-    float: left;
+    left: 0;
     padding: 0;
     width: 10%;
     margin-left: 0;
