@@ -855,3 +855,14 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_0lGzoCl62nKsziB_l_BQ2UVlW1fOn5q6ewwdKqQlVcNqSj9uoTXso0Y4XQW-VW9BErokjcZViA/sync';
+
+
+## Error Reporting
+## TODO: Switch off in production
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+$config['system.logging']['error_level'] = 'verbose';
+
+#Avoid permissions issues
+$settings['skip_permissions_hardening'] = TRUE;

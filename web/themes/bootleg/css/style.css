@@ -1,0 +1,51 @@
+h1.page-title {
+    font-size: 160px !important;
+}
+
+p {
+    border: 2px solid red;
+}
+
+
+main{
+    margin-left: 12%;
+}
+
+/* Header region */
+.region-header {
+    width: 100vw;
+    min-height: 15%;
+    border: 2px solid salmon;
+}
+
+.block-system-branding-block{
+    display: inline-flex;
+}
+
+/* Site title */
+.region-header .site-name a{
+    font-size: 4em;
+    text-decoration: none;
+}
+
+/* Content Region */
+
+.region-content{    
+    
+    width: 100%;
+}
+
+
+/* Secondary menu (side bar menu) */
+
+.region-secondary-menu{
+
+    position: fixed;
+    height: 100vh;
+    float: left;
+    padding: 0;
+    width: 10%;
+    margin-left: 0;
+    border: 2px dotted green;
+}
+

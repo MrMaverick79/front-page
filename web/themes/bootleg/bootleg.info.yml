@@ -1,0 +1,23 @@
+name: bootleg
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - bootleg/global-styling
+  - bootleg/base
+  - bootleg/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - bootleg/user
+  core/drupal.dropbutton:
+    - bootleg/dropbutton
+  core/drupal.dialog:
+    - bootleg/dialog
+  file/drupal.file:
+    - bootleg/file
+  core/drupal.progress:
+    - bootleg/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.0.9'
