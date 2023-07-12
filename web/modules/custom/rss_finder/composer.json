@@ -1,0 +1,18 @@
+{
+    "name": "drupal/rss_finder",
+    "description": "A package to allow users to search for external RSS feeds",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Drupal\\RssFinder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Brendan Tuckerman",
+            "email": "brendan.tuckerman@gmail.com"
+        }
+    ],
+    "require": {}
+}
