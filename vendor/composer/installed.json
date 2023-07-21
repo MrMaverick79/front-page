@@ -1820,6 +1820,65 @@
             "install-path": null
         },
         {
+            "name": "drupal/decoupled_router",
+            "version": "2.0.4",
+            "version_normalized": "2.0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/decoupled_router.git",
+                "reference": "2.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/decoupled_router-2.0.4.zip",
+                "reference": "2.0.4",
+                "shasum": "8dacb4460c93a3fa9b034516a7e1caaf254be76b"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "require-dev": {
+                "drupal/redirect": "^1.8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.4",
+                    "datestamp": "1669803945",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mateu Aguiló Bosch",
+                    "homepage": "https://www.drupal.org/user/103796",
+                    "email": "mateu.aguilo.bosch@gmail.com"
+                },
+                {
+                    "name": "e0ipso",
+                    "homepage": "https://www.drupal.org/user/550110"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                }
+            ],
+            "description": "Provides an endpoint that will help you resolve path aliases and redirects for entity related routes.",
+            "homepage": "https://www.drupal.org/project/decoupled_router",
+            "support": {
+                "source": "https://git.drupalcode.org/project/decoupled_router"
+            },
+            "install-path": "../../web/modules/contrib/decoupled_router"
+        },
+        {
             "name": "drupal/devel",
             "version": "5.1.2",
             "version_normalized": "5.1.2.0",
@@ -1888,6 +1947,57 @@
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
             },
             "install-path": "../../web/modules/contrib/devel"
+        },
+        {
+            "name": "drupal/druxt",
+            "version": "1.2.0",
+            "version_normalized": "1.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/druxt.git",
+                "reference": "1.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/druxt-1.2.0.zip",
+                "reference": "1.2.0",
+                "shasum": "6947c75245bf124ad53b0569bd76c7f0eb00242a"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10",
+                "drupal/decoupled_router": "^2.0",
+                "drupal/jsonapi_menu_items": "^1.0.0",
+                "drupal/jsonapi_views": "^1.0@beta"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.2.0",
+                    "datestamp": "1676000308",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Stuart Clark",
+                    "homepage": "https://www.drupal.org/user/103796",
+                    "email": "stuart@realityloop.com"
+                }
+            ],
+            "description": "A bridge between frameworks, Drupal in the back, Nuxt.js in the front.",
+            "homepage": "https://www.drupal.org/project/druxt",
+            "support": {
+                "source": "https://git.drupalcode.org/project/druxt"
+            },
+            "install-path": "../../web/modules/contrib/druxt"
         },
         {
             "name": "drupal/feeds",
@@ -2125,6 +2235,188 @@
                 }
             ],
             "install-path": "../../web/modules/contrib/gin_toolbar"
+        },
+        {
+            "name": "drupal/jsonapi_menu_items",
+            "version": "1.2.4",
+            "version_normalized": "1.2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jsonapi_menu_items.git",
+                "reference": "1.2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jsonapi_menu_items-1.2.4.zip",
+                "reference": "1.2.4",
+                "shasum": "84f4c896b7addbe21c6af7261b0ea4a1740dd9eb"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "drupal/jsonapi_resources": "^1.0"
+            },
+            "require-dev": {
+                "drupal/jsonapi_hypermedia": "^1.6"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.2.4",
+                    "datestamp": "1670645270",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acbramley",
+                    "homepage": "https://www.drupal.org/user/1036766"
+                },
+                {
+                    "name": "Deciphered",
+                    "homepage": "https://www.drupal.org/user/103796"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                }
+            ],
+            "description": "Adds a JSON API resource for menu items.",
+            "homepage": "https://www.drupal.org/project/jsonapi_menu_items",
+            "keywords": [
+                "Drupal",
+                "JSON API"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/jsonapi_menu_items"
+            },
+            "install-path": "../../web/modules/contrib/jsonapi_menu_items"
+        },
+        {
+            "name": "drupal/jsonapi_resources",
+            "version": "1.0.0-beta5",
+            "version_normalized": "1.0.0.0-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jsonapi_resources.git",
+                "reference": "8.x-1.0-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jsonapi_resources-8.x-1.0-beta5.zip",
+                "reference": "8.x-1.0-beta5",
+                "shasum": "dfd7145978efad8c258b023b47413220e590812b"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta5",
+                    "datestamp": "1668787739",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "API-First Initiative",
+                    "homepage": "https://www.drupal.org/user/3616626"
+                },
+                {
+                    "name": "gabesullice",
+                    "homepage": "https://www.drupal.org/user/2287430"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                }
+            ],
+            "description": "This module let's you define custom resources at routes of your choice that use existing resource types.",
+            "homepage": "https://www.drupal.org/project/jsonapi_resources",
+            "keywords": [
+                "Drupal",
+                "JSON API"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/jsonapi_resources"
+            },
+            "install-path": "../../web/modules/contrib/jsonapi_resources"
+        },
+        {
+            "name": "drupal/jsonapi_views",
+            "version": "1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jsonapi_views.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jsonapi_views-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "d2d83e724db1d1ea1a4a83a78007c356bc210f6e"
+            },
+            "require": {
+                "drupal/core": ">=8.8",
+                "drupal/jsonapi_resources": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1675998787",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Deciphered",
+                    "homepage": "https://www.drupal.org/user/103796"
+                },
+                {
+                    "name": "pixelwhip",
+                    "homepage": "https://www.drupal.org/user/275292"
+                }
+            ],
+            "description": "This module creates custom JSON:API resources from Views.",
+            "homepage": "https://www.drupal.org/project/jsonapi_views",
+            "keywords": [
+                "Drupal",
+                "JSON:API"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/jsonapi_views"
+            },
+            "install-path": "../../web/modules/contrib/jsonapi_views"
         },
         {
             "name": "drupal/webform",

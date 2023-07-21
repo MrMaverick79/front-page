@@ -844,21 +844,24 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'drupal',
-  'username' => 'drupal',
-  'password' => 'drupal',
+  'database' => 'front_page_db',
+  'username' => 'tucbr1',
+  'password' => 'LeopoldPWeiss',
   'prefix' => '',
-  'host' => 'mariadb',
-  'port' => '3306',
-  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
-  'driver' => 'mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+  'host' => 'host.docker.internal',
+  'port' => '5432 ',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\pgsql',
+  'driver' => 'pgsql',
+  
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_0lGzoCl62nKsziB_l_BQ2UVlW1fOn5q6ewwdKqQlVcNqSj9uoTXso0Y4XQW-VW9BErokjcZViA/sync';
 
-
-## Error Reporting
-## TODO: Switch off in production
+/** 
+ * Error Reporting
+ * These settings ensure there is output for errors on the pafe.
+ *
+ * TODO: Switch off in production
+*/
 error_reporting(E_ALL);
 ini_set('display_errors', TRUE);
 ini_set('display_startup_errors', TRUE);

@@ -1,0 +1,19 @@
+<?php
+
+/** 
+ *  @File
+ * rss_finder.module
+ */
+ 
+ function rss_finder_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'add_an_rss_feed') {
+    $form['actions']['submit']['#ajax'] = [
+      'callback' => 'rss_finder_ajax_callback',
+      'event' => 'click',
+    ];
+  }
+}
+
+function rss_finder_ajax_callback(){
+    echo("Clicked");
+}

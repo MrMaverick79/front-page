@@ -1,18 +1,18 @@
 version: "3.7"
 
 services:
-  mariadb:
-    image: wodby/mariadb:$MARIADB_TAG
-    container_name: "${PROJECT_NAME}_mariadb"
-    stop_grace_period: 30s
-    environment:
-      MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
-      MYSQL_DATABASE: $DB_NAME
-      MYSQL_USER: $DB_USER
-      MYSQL_PASSWORD: $DB_PASSWORD
-#    volumes:
-#      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
-#      - /path/to/mariadb/data/on/host:/var/lib/mysql # Use bind mount
+  # mariadb:
+  #   image: wodby/mariadb:$MARIADB_TAG
+  #   container_name: "${PROJECT_NAME}_mariadb"
+  #   stop_grace_period: 30s
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
+  #     MYSQL_DATABASE: $DB_NAME
+  #     MYSQL_USER: $DB_USER
+  #     MYSQL_PASSWORD: $DB_PASSWORD
+# volumes:
+# #      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+  # - /path/to/mariadb/data/on/host:/var/lib/postgresql # Use bind mount
 
   php:
     image: wodby/drupal-php:$PHP_TAG
@@ -90,18 +90,18 @@ services:
     - "traefik.http.services.${PROJECT_NAME}_mailhog.loadbalancer.server.port=8025"
     - "traefik.http.routers.${PROJECT_NAME}_mailhog.rule=Host(`mailhog.${PROJECT_BASE_URL}`)"
 
-#  postgres:
-#    image: wodby/postgres:$POSTGRES_TAG
-#    container_name: "${PROJECT_NAME}_postgres"
-#    stop_grace_period: 30s
-#    environment:
-#      POSTGRES_PASSWORD: $DB_PASSWORD
-#      POSTGRES_DB: $DB_NAME
-#      POSTGRES_USER: $DB_USER
-#      POSTGRES_DB_EXTENSIONS: pg_trgm
-#    volumes:
-#    - ./postgres-init:/docker-entrypoint-initdb.d # Place init file(s) here.
-#    - /path/to/postgres/data/on/host:/var/lib/postgresql/data # Use bind mount
+  # postgres:
+  # #  image: wodby/postgres:$POSTGRES_TAG
+  # #  container_name: "${PROJECT_NAME}_postgres"
+  #  stop_grace_period: 30s
+  #  environment:
+  #    POSTGRES_PASSWORD: $DB_PASSWORD
+  #    POSTGRES_DB: $DB_NAME
+  #    POSTGRES_USER: $DB_USER
+  #    POSTGRES_DB_EXTENSIONS: pg_trgm
+  #  volumes:
+  # #  - ./postgres-init:/docker-entrypoint-initdb.d # Place init file(s) here.
+  #  - ~/Library/PostgreSQL/14/data:/var/lib/postgresql/data # Use bind mount
 
 #  apache:
 #    image: wodby/apache:$APACHE_TAG
