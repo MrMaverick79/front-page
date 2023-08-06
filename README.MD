@@ -19,4 +19,10 @@ Deployed with Drupal4Docker[https://wodby.com/docs/1.0/stacks/drupal/local/]
 - Feeds
 
 
+**Start** 
+
+**TODO**
+
+- web/sites/default/default.services.yml needs to be secured
+
 
