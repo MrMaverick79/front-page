@@ -23,6 +23,7 @@
         "drupal/druxt": "^1.2",
         "drupal/feeds": "3.x-dev@dev",
         "drupal/gin": "^3.0@RC",
+        "drupal/simple_oauth": "^5.2",
         "drupal/webform": "^6.2@beta"
     },
     "conflict": {
